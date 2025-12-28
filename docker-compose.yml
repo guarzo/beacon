@@ -1,0 +1,12 @@
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    # Alternatively, specify environment variables directly:
+    # environment:
+    #   - DISCORD_BOT_TOKEN=${DISCORD_BOT_TOKEN}
+    #   - PREFERRED_ALLIANCES=${PREFERRED_ALLIANCES:-99010452}
+    #   - PREFERRED_CORPS=${PREFERRED_CORPS:-98648442}
+    #   - DEBUG_BR=${DEBUG_BR:-false}
