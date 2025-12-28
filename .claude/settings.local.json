@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(pip install:*)",
-      "Bash(ruff format:*)"
+      "Bash(ruff format:*)",
+      "Bash(mkdir:*)",
+      "Bash(ruff check:*)",
+      "Bash(python:*)"
     ]
   }
 }
